@@ -350,7 +350,7 @@ if __name__ == '__main__':
     #    u"It's perhaps noteworthy that phone numbers like +1 (800) 123-4567, (800) 123-4567, and 123-4567 are treated as words despite their whitespace."
     #    )
     
-    final_pos,pos_len=tok.calculate_score2("C:\\Users\\notebook\\Desktop\\Python\\dummy_runs.xml")
+    final_pos,pos_len=tok.calculate_score2("C:\\Users\\notebook\\Desktop\\Python\\GitFiles\\pos_small_software.xml")
     final_neg,neg_len=tok.calculate_score2("C:\\Users\\notebook\\Desktop\\Python\\GitFiles\\neg_small_software.xml")
     final_neg = neg_len-final_neg
     accuracy = float((final_pos+final_neg)/(pos_len+neg_len))
